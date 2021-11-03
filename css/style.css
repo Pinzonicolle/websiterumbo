@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Varela Round', sans-serif;
+}
+
+header {
+    width: 100%;
+    /* Para llamar una imagen de fondo utilizamos la propiedad url y la ruta seria ../ para salir de la carpeta y luego lo demas */
+    background: url(../img/bg-header.png);
+    /* Cover ajusta la imagen al alto y al ancho del elemento contenedor */
+    background-size: cover;
+    height: 100vh;
+    padding-top: 40px;
+}
+
+header nav {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    /* Usamos display flex para ubicar los contenidos uno junto a otros */
+    display: flex;
+    /* Eje x */
+    justify-content: space-between;
+    /* Eje y */
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    list-style: none;
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    padding: 12px 30px;
+}
+
+header nav ul li a:hover {
+    border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+}
+
+header #hero {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 180px;
+}
+
+header #hero h1 {
+    color: yellow;
+    font-size: 60px;
+    margin: 0;
+}
+
+header #hero h2 {
+    color: #ffffff;
+    font-size: 30px;
+    margin: 0;
+    margin-bottom: 100px;
+}
+
+header #hero a {
+    background: yellow;
+    padding: 12px 40px;
+    text-decoration: none;
+    font-size: 30px;
+    border-radius: 12px;
+    color: gray;
+    transition: 1s;
+}
+
+header #hero a:hover {
+    padding: 12px 60px;
+    border-radius: 0;
+    background: #ffffff;
+}
+
+#planes {
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+
+/* seccion planes */
+
+#planes .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#planes h2 {
+    font-size: 50px;
+}
+
+#planes p {
+    font-size: 20px;
+}
+
+#planes .fila {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 70px;
+}
+
+#planes .fila .card {
+    position: relative;
+}
+
+#planes .fila .card h3 {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    color: yellow;
+}
+
+
+/* seccion destinos */
+
+#destinos {
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 40px;
+    background: url(../img/bg-destinos.png);
+    text-align: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+#destinos .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#destinos h2 {
+    color: yellow;
+    font-size: 50px;
+}
+
+#destinos .fila {
+    display: flex;
+    justify-content: space-around;
+}
+
+#destinos .container h3 {
+    color: white;
+    font-size: 30px;
+}
+
+
+/* SECCION CONTACTO */
+
+#contacto {
+    background: yellow;
+    width: 100%;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#contacto .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#contacto h2 {
+    font-size: 50px;
+}
+
+#contacto p {
+    font-size: 20px;
+}
+
+#contacto input {
+    padding: 4px 15px;
+    font-size: 20px;
+    width: 300px;
+    margin: 20px;
+    border-radius: 4px;
+}
+
+#contacto button {
+    font-size: 20px;
+    padding: 10px 30px;
+    background: rgb(199, 199, 0);
+    border-radius: 4px;
+    border: none
+}
+
+footer {
+    background: rgb(0, 0, 0);
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
